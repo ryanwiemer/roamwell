@@ -1,0 +1,19 @@
+/* ------- *
+ *  Typography  *
+ * ------- */
+
+//Font Families
+$headline: "Helvetica", sans-serif;
+$body: "Georgia", serif;
+
+html {
+  color: $base;
+}
+
+body{
+  font-family: $body;
+  font-size: 100%;
+  @include bp(medium) {
+    font-size: 112.5%;
+  }
+}

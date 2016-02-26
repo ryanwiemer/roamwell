@@ -1,0 +1,158 @@
+/* ------------------ *
+ *     COMMENTS      *
+ * ------------------ */
+
+.comments-link {
+  margin-top: 1em;
+}
+
+.comments-link a, .touch .comments-link a:hover {
+  background: none;
+  color: gray;
+  border-color: $secondary;
+}
+
+.comments-link a:hover {
+  background: $highlight;
+  color: white;
+  border-color: $highlight;
+}
+
+//Comments Section
+.comment-reply-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.comment-list {
+  border: 2px solid $secondary;
+  border-radius: 2px;
+}
+
+#comments {
+  padding-top: 100px;
+  margin-top: -100px;
+  margin-bottom: 2em;
+  @extend %clearfix;
+}
+
+.comment-body {
+  @extend %clearfix;
+}
+
+.odd {
+  background: $tertiary;
+  border-radius: 2px;
+  padding: 1em;
+}
+
+.even {
+  padding: 1em;
+}
+
+.comment-author {
+  margin-right: .5em;
+  float: left;
+}
+
+.comment-author a, .touch .comment-author a:hover {
+  color: $base;
+  border-bottom: 2px solid $highlight;
+}
+
+.comment-author a:hover {
+  color: gray;
+}
+
+.comment-author, .commentmetadata {
+  font-family: $headline;
+}
+
+.commentmetadata {
+  margin-bottom: 1em;
+  float: right;
+}
+
+.commentmetadata a {
+  color: $base;
+}
+
+.comment-body p {
+  float: left;
+  width: 100%;
+}
+
+.comment-respond, comment-form{
+  float: left;
+  width: 100%;
+}
+
+//Comment Form
+
+.comment-form {
+  margin-bottom: 0;
+}
+
+.comment-form input, .comment-form textarea {
+  background: white;
+  width: 100%;
+  border-radius: 2px;
+  border: 2px solid $secondary;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: .5em;
+  font-family: $body;
+  font-size: 1em;
+}
+
+.comment-form textarea {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  height: 300px;
+  overflow: auto;
+  resize: none;
+  line-height: 1.45;
+}
+
+.comment-form input:focus, .comment-form textarea:focus {
+  outline: none !important;
+  box-shadow: 0;
+}
+
+.comment-respond label, .form-submit input {
+  font-family: $headline;
+  color: gray;
+}
+
+.form-submit {
+  margin-bottom: 0!important;
+}
+
+.form-submit input {
+  color: gray;
+  @include bp(medium) {
+    width: 10em;
+  }
+}
+
+.form-submit input:hover {
+  background: $highlight;
+  border-color: $highlight;
+  color: white;
+  cursor: pointer;
+}
+
+.required {
+  color: $highlight;
+}
+
+.logged-in-as a {
+  color: $base;
+  border-bottom: 2px solid $highlight;
+}
+
+.logged-in-as a:hover {
+  color: lighten($base, 20%);
+}
