@@ -7,16 +7,16 @@
   margin: 0 auto;
   padding: 0 1em;
   max-width: 1200px;
-  background: green;
+  background: $secondary;
   display: flex;
   flex-flow: row wrap;
 }
 
 .main {
   height: 2000px;
-  background: #eee;
+  background: white;
   flex: 1 100%;
   @include bp(medium) {
-    flex: 1 66.6%;
+    flex: 1 75%;
   }
 }
