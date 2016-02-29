@@ -14,9 +14,11 @@
   <!-- Google Analytics -->
 </head>
 <body <?php body_class('loading'); ?>>
-<header class="site-header">
-  <a class="site-logo" href="<?php echo get_site_url() ?>"><h1><?php echo get_bloginfo( 'name' ); ?></h1></a>
-  <nav class="site-header__nav">
-    <?php wp_nav_menu( array( 'menu' => 'Menu 1', 'container' => false, 'menu_class' => '', 'container_class' => '') ); ?>
-  </nav>
-</header>
+<div class="container">
+  <header class="header">
+    <nav class="nav">
+      <a class="logo" href="<?php echo get_site_url() ?>"><h1><?php echo get_bloginfo( 'name' ); ?></h1><img src="http://placehold.it/200x200" /></a>
+      <?php wp_nav_menu( array( 'menu' => 'Menu 1', 'container' => false, 'menu_class' => '', 'container_class' => '') ); ?>
+      <button class="btn btn--explore">Explore</button>
+    </nav>
+  </header>

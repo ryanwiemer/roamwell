@@ -4,9 +4,7 @@
  */
 get_header(); ?>
 
-<div class="container">
-	<div class="main">
-
+<div class="main">
 	<?php if ( have_posts() ) : ?>
 
 		<?php /* Start the Loop */ ?>
@@ -21,11 +19,5 @@ get_header(); ?>
 		<?php get_template_part( 'content', 'none' ); ?>
 
 	<?php endif; ?>
-
-	</div>
-	<?php get_sidebar(); ?>
-</div>
-<div class="page-nav">
-	<?php posts_nav_link(' ','newer posts &#8594;','&#8592; older posts'); ?>
-</div>
+</div><!--main-->
 <?php get_footer(); ?>

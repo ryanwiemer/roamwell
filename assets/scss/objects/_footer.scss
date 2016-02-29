@@ -1,3 +1,10 @@
 /* ------- *
  *  FOOTER  *
  * ------- */
+
+.footer {
+  @extend %clearfix;
+  background: black;
+  text-align: center;
+  @include span-columns(12);
+}

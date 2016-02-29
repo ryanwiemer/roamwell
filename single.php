@@ -4,7 +4,6 @@
  */
 get_header(); ?>
 
-<div class="container">
 	<div class="main">
 		<?php while ( have_posts() ) : the_post(); ?>
 
@@ -13,7 +12,5 @@ get_header(); ?>
 			<?php comments_template(); ?>
 
 		<?php endwhile; // end of the loop. ?>
-	</div>
-<?php get_sidebar(); ?>
-</div>
+	</div><!--main-->
 <?php get_footer(); ?>
