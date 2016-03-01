@@ -148,6 +148,12 @@ function register_my_menu() {
 add_action( 'init', 'register_my_menu' );
 
 
+function wpdocs_excerpt_more( $more ) {
+    return ' <a class="read-more" href="=#">[...]</a>';
+}
+add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
+
 ////////////////////////
 //CSS & JS Scripts//////
 ////////////////////////
@@ -155,7 +161,7 @@ add_action( 'init', 'register_my_menu' );
 //Enqueue scripts and styles.
 function enqueueFiles() {
   wp_enqueue_style( 'style',  get_stylesheet_directory_uri() . '/assets/css/style.min.css');
-  wp_enqueue_script( 'scripts',  get_template_directory_uri() . '/assets/js/scripts.min.js', '', '', true);
+  wp_enqueue_script( 'scripts',  get_template_directory_uri() . '/assets/js/scripts/scripts.js', '', '', true);
   wp_enqueue_script( 'modernizr',  get_template_directory_uri() . '/assets/js/vendor/modernizr.min.js');
 }
 

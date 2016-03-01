@@ -3,8 +3,11 @@
  * ------- */
 
 .footer {
+  background: gray;
+  height: 75px;
+  line-height: 75px;
+  color: white;
   @extend %clearfix;
-  background: black;
   text-align: center;
   @include span-columns(12);
 }

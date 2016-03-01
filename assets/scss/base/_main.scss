@@ -1,22 +1,23 @@
 /* ------- *
  *   Main  *
  * ------- */
+body {
+  background: $secondary;
+}
 
 .container {
+  @include outer-container;
   @extend %clearfix;
   margin: 0 auto;
-  padding: 0 1em;
+  padding: 1em;
   max-width: 1200px;
-  background: $secondary;
-  display: flex;
-  flex-flow: row wrap;
+  background: white;
 }
 
 .main {
-  height: 2000px;
-  background: white;
-  flex: 1 100%;
+  @include span-columns(12);
   @include bp(medium) {
-    flex: 1 75%;
+    @include span-columns(9);
+    @include omega();
   }
 }

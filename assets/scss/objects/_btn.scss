@@ -1,3 +1,46 @@
 /* ------------------ *
  *         BTN        *
  * ------------------ */
+
+.btn {
+  border:none;
+  -webkit-appearance: none;
+  background: none;
+  font-family: $body;
+  font-size: 100%;
+  &:hover {
+    cursor: pointer;
+  }
+  &:active, &:focus {
+    outline: none;
+  }
+}
+
+.btn--explore {
+  padding: .25em .5em;
+  background: $secondary;
+  &:before {
+    font-family: 'icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e904";
+    //vertical-align: m;
+    margin-right: .5em;
+  }
+  &:hover {
+    background: $base;
+    color: white;
+  }
+}
+
+//Explore Button Popup Functionality
+.open {
+  transform: translate3d(25%, 0, 0);
+  overflow: hidden;
+}
