@@ -3,10 +3,10 @@
  * ------- */
 body {
   background: $secondary;
+
 }
 
 .container {
-  @include outer-container;
   @extend %clearfix;
   margin: 0 auto;
   padding: 1em;
@@ -15,9 +15,7 @@ body {
 }
 
 .main {
-  @include span-columns(12);
   @include bp(medium) {
-    @include span-columns(9);
-    @include omega();
+
   }
 }

@@ -1,0 +1,68 @@
+/* ---------------------- *
+ *   Explore Navigation  *
+ * ---------------------- */
+
+ .overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   opacity: 0;
+   visibility: hidden;
+ }
+
+ .open .overlay {
+   opacity: 1;
+   visibility: visible;
+ }
+
+ .open {
+   transform: translate3d(75%, 0, 0);
+   overflow: hidden;
+ }
+
+ .explore-nav {
+   position: absolute;
+   width: 75%;
+   transform: translate3d(-100%, 0, 0);
+   ul {
+     position: relative;
+   }
+   li {
+     position: relative;
+     background-size: cover;
+     background-position: center center;
+     display: block;
+     background: gray;
+     text-align: center;
+     height: 25vh;
+   }
+   a {
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     color: white;
+     background: rgba(0,0,0,.3);
+     line-height: 25vh;
+   }
+ }
+
+.explore-nav a:hover {
+  background: rgba(0,0,0,.15);
+}
+
+
+
+ .btn--close {
+   font-size: 1.25em!important;
+   color: white;
+   position: absolute;
+   top: .5em;
+   right: .5em;
+   z-index: 99;
+ }

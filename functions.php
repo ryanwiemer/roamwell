@@ -147,11 +147,16 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 
-
+//Wordpress Excerpt More
 function wpdocs_excerpt_more( $more ) {
     return ' <a class="read-more" href="=#">[...]</a>';
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
+//Options Page (Advanced Custom Fields)
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page();
+}
 
 
 ////////////////////////

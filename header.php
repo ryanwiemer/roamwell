@@ -15,11 +15,28 @@
   <!-- Google Analytics -->
 </head>
 <body <?php body_class('loading'); ?>>
+<?php if( have_rows('category_navigation','option') ): ?>
+  <nav class='explore-nav'>
+    <ul>
+      <button class="btn btn--close icon-cross"></button>
+      <?php while( have_rows('category_navigation','option') ): the_row(); ?>
+        <?php $cat_id = get_sub_field('category','option'); ?>
+        <li style="background-image:url('<?php the_sub_field('thumbnail_image','option'); ?>');">
+          <a href="<?php echo get_category_link($cat_id);?>">
+            <?php echo get_cat_name($cat_id);?>
+          </a>
+        </li>
+      <?php endwhile; ?>
+    </ul>
+  </nav>
+<?php endif; ?>
+
 <div class="container">
   <header class="header">
-    <a href="<?php echo get_site_url() ?>"><h1 class="logo"><?php echo get_bloginfo( 'name' ); ?></h1></a>
     <nav class="nav">
+      <a href="<?php echo get_site_url() ?>"><h1 class="logo"><?php echo get_bloginfo( 'name' ); ?></h1></a>
       <?php wp_nav_menu( array( 'menu' => 'Menu 1', 'container' => false, 'menu_class' => '', 'container_class' => '') ); ?>
       <button class="btn btn--explore">Explore</button>
     </nav>
   </header>
+  <div class="overlay"></div>

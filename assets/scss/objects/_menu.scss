@@ -3,9 +3,9 @@
  * ------- */
 
 .header {
-  @include span-columns(12);
+  width: 100%;
   @include bp(medium) {
-    @include span-columns(3);
+    flex: 0 0 25%;
   }
   a {
     text-decoration: none;
@@ -25,6 +25,9 @@
 }
 
 .nav {
+  @include bp(medium) {
+    //position: fixed;
+  }
   li {
     margin-bottom: .5em;
   }

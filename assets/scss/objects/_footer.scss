@@ -9,5 +9,5 @@
   color: white;
   @extend %clearfix;
   text-align: center;
-  @include span-columns(12);
+  display: block;
 }
