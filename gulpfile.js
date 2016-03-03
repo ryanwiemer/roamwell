@@ -2,7 +2,6 @@
 var gulp = require('gulp');
 
 // Include the Plugins
-var jshint = require('gulp-jshint');
 var sass = require('gulp-sass');
 var bourbon = require('node-bourbon');
 var neat = require('node-neat');
@@ -42,11 +41,21 @@ gulp.task('sass', function() {
     .pipe(browserSync.reload({stream:true}));
 });
 
+// Uglify JS
+gulp.task('js', function() {
+  gulp.src(['assets/js/scripts/*.js'])
+    .pipe(uglify())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(gulp.dest('assets/js/'))
+    .pipe(browserSync.reload({stream:true}));
+});
+
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch('assets/scss/*/*.scss', ['sass'])
+    gulp.watch('assets/js/*/*.scss', ['js'])
     gulp.watch('.php').on('change', reload);
 });
 
 // Default Task
-gulp.task('default', ['sass','browser-sync', 'watch']);
+gulp.task('default', ['sass','js','browser-sync', 'watch']);
