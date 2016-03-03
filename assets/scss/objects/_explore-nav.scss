@@ -52,13 +52,10 @@
    }
  }
 
-.touch-events .open .container {
-  position: fixed;
-}
-
  .explore-nav {
    position: fixed;
    top: 0;
+   left: 0;
    width: 75%;
    @include bp(medium) {
       width: 25%;

@@ -10,13 +10,14 @@ body {
   padding: 1em 1em 0 1em;
   background: white;
   @extend %clearfix;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate3d(0,0,0);
+  position: relative;
   @include bp(medium) {
 
   }
+}
+
+.wrapper {
+  position: relative;
 }
 
 .main {
