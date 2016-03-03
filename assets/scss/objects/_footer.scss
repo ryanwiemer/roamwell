@@ -7,7 +7,6 @@
   height: 75px;
   line-height: 75px;
   color: white;
-  @extend %clearfix;
   text-align: center;
-  display: block;
+  @include span-columns(12);
 }

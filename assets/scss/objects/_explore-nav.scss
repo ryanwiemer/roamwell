@@ -2,6 +2,34 @@
  *   Explore Navigation  *
  * ---------------------- */
 
+.btn--explore {
+  padding: .25em .5em;
+  @include span-columns(12);
+  background: $secondary!important;
+  margin-bottom: 1em;
+  &:before {
+    font-family: 'icons'!important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e904";
+    margin-right: .5em;
+  }
+  &:hover {
+    background: $base!important;
+    color: white;
+  }
+}
+
+ .open {
+    overflow: hidden;
+ }
+
  .overlay {
    position: absolute;
    top: 0;
@@ -17,15 +45,24 @@
    visibility: visible;
  }
 
- .open {
-   transform: translate3d(75%, 0, 0);
-   overflow: hidden;
+ .open .container {
+   transform: translate3d(75%,0,0);
+   @include bp(medium) {
+      transform: translate3d(25%,0,0);
+   }
  }
 
+.touch-events .open .container {
+  position: fixed;
+}
+
  .explore-nav {
-   position: absolute;
+   position: fixed;
+   top: 0;
    width: 75%;
-   transform: translate3d(-100%, 0, 0);
+   @include bp(medium) {
+      width: 25%;
+   }
    ul {
      position: relative;
    }
@@ -34,7 +71,6 @@
      background-size: cover;
      background-position: center center;
      display: block;
-     background: gray;
      text-align: center;
      height: 25vh;
    }
@@ -56,13 +92,15 @@
   background: rgba(0,0,0,.15);
 }
 
-
+.open .explore-nav {
+  transform: translateX(0);
+}
 
  .btn--close {
    font-size: 1.25em!important;
    color: white;
    position: absolute;
    top: .5em;
-   right: .5em;
+   right: .25em;
    z-index: 99;
  }

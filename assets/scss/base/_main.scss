@@ -3,19 +3,26 @@
  * ------- */
 body {
   background: $secondary;
-
 }
 
 .container {
-  @extend %clearfix;
   margin: 0 auto;
-  padding: 1em;
-  max-width: 1200px;
+  padding: 1em 1em 0 1em;
   background: white;
+  @extend %clearfix;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate3d(0,0,0);
+  @include bp(medium) {
+
+  }
 }
 
 .main {
   @include bp(medium) {
-
+    @include span-columns(9);
+    @include shift(3);
+    @include omega();
   }
 }

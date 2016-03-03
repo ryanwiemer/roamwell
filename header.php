@@ -30,7 +30,6 @@
     </ul>
   </nav>
 <?php endif; ?>
-
 <div class="container">
   <header class="header">
     <nav class="nav">
