@@ -8,8 +8,8 @@
       <p>&copy; <?php echo date("Y") ?> Lara All rights reserved.</p>
     </div>
   </footer>
+</div><!--canvas-->
 </div><!--wrapper-->
-</div><!--container-->
 <?php wp_footer(); ?>
 </body>
 </html>

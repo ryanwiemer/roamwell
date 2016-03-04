@@ -5,19 +5,32 @@ body {
   background: $secondary;
 }
 
-.container {
+.canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
   margin: 0 auto;
   padding: 1em 1em 0 1em;
   background: white;
   @extend %clearfix;
-  position: relative;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
   @include bp(medium) {
-
   }
 }
 
 .wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+  @extend %clearfix;
+  overflow: hidden;
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .main {

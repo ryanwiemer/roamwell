@@ -15,23 +15,24 @@
   <!-- Google Analytics -->
 </head>
 <body <?php body_class('loading'); ?>>
-<div class="container">
-  <?php if( have_rows('category_navigation','option') ): ?>
-    <nav class='explore-nav'>
-      <ul>
-        <button class="btn btn--close icon-cross"></button>
-        <?php while( have_rows('category_navigation','option') ): the_row(); ?>
-          <?php $cat_id = get_sub_field('category','option'); ?>
-          <li style="background-image:url('<?php the_sub_field('thumbnail_image','option'); ?>');">
-            <a href="<?php echo get_category_link($cat_id);?>">
-              <?php echo get_cat_name($cat_id);?>
-            </a>
-          </li>
-        <?php endwhile; ?>
-      </ul>
-    </nav>
-  <?php endif; ?>
   <div class="wrapper">
+    <?php if( have_rows('category_navigation','option') ): ?>
+      <nav class='explore-nav'>
+        <ul>
+          <button class="btn btn--close icon-cross"></button>
+          <?php while( have_rows('category_navigation','option') ): the_row(); ?>
+            <?php $cat_id = get_sub_field('category','option'); ?>
+            <li style="background-image:url('<?php the_sub_field('thumbnail_image','option'); ?>');">
+              <a href="<?php echo get_category_link($cat_id);?>">
+                <?php echo get_cat_name($cat_id);?>
+              </a>
+            </li>
+          <?php endwhile; ?>
+        </ul>
+      </nav>
+    <?php endif; ?>
+  <div class="canvas">
+
   <header class="header">
     <nav class="nav">
       <a href="<?php echo get_site_url() ?>"><h1 class="logo"><?php echo get_bloginfo( 'name' ); ?></h1></a>

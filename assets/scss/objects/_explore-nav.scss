@@ -26,29 +26,31 @@
   }
 }
 
- .open {
-    overflow: hidden;
- }
-
  .overlay {
    position: absolute;
    top: 0;
    left: 0;
    right: 0;
    bottom: 0;
+   background: rgba(255,255,255,.4);
+   z-index: 99;
    opacity: 0;
    visibility: hidden;
  }
+
+.open {
+  overflow: hidden;
+}
 
  .open .overlay {
    opacity: 1;
    visibility: visible;
  }
 
- .open .container {
+ .open .canvas {
    transform: translate3d(75%,0,0);
    @include bp(medium) {
-      transform: translate3d(25%,0,0);
+     transform: translate3d(25%,0,0);
    }
  }
 
@@ -58,6 +60,7 @@
    left: 0;
    width: 75%;
    @include bp(medium) {
+      left: 0;
       width: 25%;
    }
    ul {
@@ -87,10 +90,6 @@
 
 .explore-nav a:hover {
   background: rgba(0,0,0,.15);
-}
-
-.open .explore-nav {
-  transform: translateX(0);
 }
 
  .btn--close {
