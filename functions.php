@@ -165,9 +165,8 @@ if( function_exists('acf_add_options_page') ) {
 
 //Enqueue scripts and styles.
 function enqueueFiles() {
-  wp_enqueue_style( 'style',  get_stylesheet_directory_uri() . '/assets/css/style.min.css');
-  wp_enqueue_script( 'scripts',  get_template_directory_uri() . '/assets/js/scripts/scripts.js', '', '', true);
-  wp_enqueue_script( 'modernizr',  get_template_directory_uri() . '/assets/js/vendor/modernizr.min.js');
+  wp_enqueue_style( 'style',  get_stylesheet_directory_uri() . '/build/css/style.min.css');
+  wp_enqueue_script( 'scripts',  get_template_directory_uri() . '/build/js/scripts.min.js', '', '', true);
 }
 
 add_action( 'wp_enqueue_scripts', 'enqueueFiles');

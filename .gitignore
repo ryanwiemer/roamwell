@@ -38,6 +38,5 @@ npm-debug.log
 *.swp
 *.bak
 
-#Bower
-bower_components
-bower_components/*
+# Build Folders
+build/*

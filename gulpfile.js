@@ -14,18 +14,26 @@ var browserSync = require('browser-sync');
 var reload      = browserSync.reload;
 
 gulp.task('browser-sync', function() {
-  //watch files
-  var files = [
-    'assets/css/*.css',
-    'assets/js/*.js',
-    '*.php'
-  ];
   //initialize browsersync
-  browserSync.init(files, {
+  browserSync.init({
   //browsersync with a php server
   proxy: "lara.dev",
   notify: false
   });
+});
+
+//Move Images
+gulp.task('images', function() {
+  gulp.src(['assets/img/*.*'])
+    .pipe(gulp.dest('build/img/'))
+    .pipe(browserSync.reload({stream:true}));
+});
+
+//Move Fonts
+gulp.task('fonts', function() {
+  gulp.src(['assets/fonts/*.*'])
+    .pipe(gulp.dest('build/fonts/'))
+    .pipe(browserSync.reload({stream:true}));
 });
 
 // Compile Sass & Minify CSS
@@ -37,7 +45,7 @@ gulp.task('sass', function() {
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
     .pipe(minifycss())
     .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('assets/css/'))
+    .pipe(gulp.dest('build/css/'))
     .pipe(browserSync.reload({stream:true}));
 });
 
@@ -46,16 +54,18 @@ gulp.task('js', function() {
   gulp.src(['assets/js/scripts/*.js'])
     .pipe(uglify())
     .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('assets/js/'))
+    .pipe(gulp.dest('build/js/'))
     .pipe(browserSync.reload({stream:true}));
 });
 
 // Watch Files For Changes
 gulp.task('watch', function() {
+    gulp.watch('assets/img/*.*', ['images'])
+    gulp.watch('assets/fonts/*.*', ['fonts'])
     gulp.watch('assets/scss/*/*.scss', ['sass'])
-    gulp.watch('assets/js/*/*.scss', ['js'])
+    gulp.watch('assets/js/scripts/*.js', ['js'])
     gulp.watch('.php').on('change', reload);
 });
 
 // Default Task
-gulp.task('default', ['sass','js','browser-sync', 'watch']);
+gulp.task('default', ['sass','js','images','fonts','browser-sync', 'watch']);
