@@ -143,7 +143,7 @@ add_filter( 'jpeg_quality', create_function( '', 'return 95;' ) );
 
 //Register Menu
 function register_my_menu() {
-  register_nav_menu('header-menu',__( 'Header Menu' ));
+  register_nav_menu('Menu 1',__( 'Header Menu' ));
 }
 add_action( 'init', 'register_my_menu' );
 

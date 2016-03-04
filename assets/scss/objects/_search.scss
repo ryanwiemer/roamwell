@@ -3,21 +3,51 @@
  * ------------------ */
 
 .search {
-  display: none;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
 }
 
-.search .search__overlay {
+.open--search .search {
+  opacity: 1;
+  visibility: visible;
+}
 
+.search__overlay {
+  position: relative;
+  background: $secondary;
+  height: 100%;
 }
 
 .search__form {
   margin: 0 auto;
-  display: inline-block;
+  padding: 1em;
   background: green;
-  //position: absolute;
+  display: inline-block;
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  @include bp(medium) {
+    width: 75%;
+  }
+  @include bp(large) {
+    width: 50%;
+  }
 }
 
 .search__form__field {
-
+@include span-columns(10);
+z-index: 999;
 }
-.search__from__submit {}
+.search__from__submit {
+  @include span-columns(2);
+  @include omega();
+}

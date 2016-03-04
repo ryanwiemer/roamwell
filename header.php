@@ -15,8 +15,8 @@
   <!-- Google Analytics -->
 </head>
 <body <?php body_class('loading'); ?>>
+  <?php get_search_form(); ?>
   <div class="wrapper">
-    <?php get_search_form(); ?>
     <?php if( have_rows('category_navigation','option') ): ?>
       <nav class='explore-nav'>
         <ul>
@@ -40,4 +40,4 @@
       <button class="btn btn--explore">Explore</button>
     </nav>
   </header>
-  <div class="overlay"></div>
+  <div class="overlay--nav"></div>
