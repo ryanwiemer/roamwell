@@ -8,6 +8,7 @@ body {
 .canvas {
   width: 100%;
   height: 100%;
+  min-height: 100vh;
   position: relative;
   top: 0;
   left: 0;
@@ -25,7 +26,6 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 960px;
   @extend %clearfix;
   overflow: hidden;
   position: relative;
@@ -36,7 +36,7 @@ body {
 .main {
   @include bp(medium) {
     @include span-columns(9);
-    @include shift(3);
+    //@include shift(3);
     @include omega();
   }
 }

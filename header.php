@@ -16,6 +16,7 @@
 </head>
 <body <?php body_class('loading'); ?>>
   <div class="wrapper">
+    <?php get_search_form(); ?>
     <?php if( have_rows('category_navigation','option') ): ?>
       <nav class='explore-nav'>
         <ul>
@@ -32,7 +33,6 @@
       </nav>
     <?php endif; ?>
   <div class="canvas">
-
   <header class="header">
     <nav class="nav">
       <a href="<?php echo get_site_url() ?>"><h1 class="logo"><?php echo get_bloginfo( 'name' ); ?></h1></a>

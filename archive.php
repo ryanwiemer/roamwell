@@ -5,9 +5,7 @@
 
 get_header(); ?>
 
-<div class="container">
 	<?php if ( have_posts() ) : ?>
-		<div class="main">
 		<header class="page__header archive__header">
 			<h2 class="page__title">
 				 <?php
@@ -57,8 +55,6 @@ get_header(); ?>
 		<?php get_template_part( 'content', 'none' ); ?>
 
 	<?php endif; ?>
-</div>
-</div>
 <div class="page-nav">
 	<?php posts_nav_link(' ','newer posts &#8594;','&#8592; older posts'); ?>
 </div>

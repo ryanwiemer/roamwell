@@ -148,10 +148,11 @@ function register_my_menu() {
 add_action( 'init', 'register_my_menu' );
 
 //Wordpress Excerpt More
-function wpdocs_excerpt_more( $more ) {
-    return ' <a class="read-more" href="=#">[...]</a>';
+function et_excerpt_more($more) {
+    global $post;
+    return '<a href="'. get_permalink($post->ID) . '" class="read-more">[...]</a>';
 }
-add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+add_filter('excerpt_more', 'et_excerpt_more');
 
 //Options Page (Advanced Custom Fields)
 if( function_exists('acf_add_options_page') ) {

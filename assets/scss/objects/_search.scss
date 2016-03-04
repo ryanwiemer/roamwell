@@ -1,3 +1,23 @@
 /* ------------------ *
  *      SEARCH       *
  * ------------------ */
+
+.search {
+  display: none;
+}
+
+.search .search__overlay {
+
+}
+
+.search__form {
+  margin: 0 auto;
+  display: inline-block;
+  background: green;
+  //position: absolute;
+}
+
+.search__form__field {
+
+}
+.search__from__submit {}

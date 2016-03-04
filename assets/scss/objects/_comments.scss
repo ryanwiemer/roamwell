@@ -21,18 +21,15 @@
 //Comments Section
 .comment-reply-title {
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-bottom: 1em;
 }
 
 .comment-list {
-  border: 2px solid $secondary;
-  border-radius: 2px;
+  //border: 2px solid $secondary;
 }
 
 #comments {
-  padding-top: 100px;
-  margin-top: -100px;
   margin-bottom: 2em;
   @extend %clearfix;
 }
@@ -66,7 +63,7 @@
 }
 
 .comment-author, .commentmetadata {
-  font-family: $headline;
+  //font-family: $headline;
 }
 
 .commentmetadata {
@@ -83,21 +80,19 @@
   width: 100%;
 }
 
-.comment-respond, comment-form{
+.comment-respond, .comment-form{
   float: left;
   width: 100%;
 }
 
 //Comment Form
-
 .comment-form {
-  margin-bottom: 0;
+  margin-bottom: 1em;
 }
 
 .comment-form input, .comment-form textarea {
   background: white;
   width: 100%;
-  border-radius: 2px;
   border: 2px solid $secondary;
   outline: 0;
   -webkit-appearance: none;
@@ -113,7 +108,7 @@
   height: 300px;
   overflow: auto;
   resize: none;
-  line-height: 1.45;
+  line-height: 1.4;
 }
 
 .comment-form input:focus, .comment-form textarea:focus {
@@ -131,15 +126,16 @@
 }
 
 .form-submit input {
-  color: gray;
+  color: $base;
+  background: $secondary;
   @include bp(medium) {
     width: 10em;
   }
 }
 
 .form-submit input:hover {
-  background: $highlight;
-  border-color: $highlight;
+  background: $base;
+  border-color: $base;
   color: white;
   cursor: pointer;
 }

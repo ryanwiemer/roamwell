@@ -6,7 +6,7 @@
   width: 100%;
   @include bp(medium) {
     @include span-columns(3);
-     position: fixed;
+     //position: fixed;
      transform: translate3d(0,0,0);
      z-index:1;
      top: 1em;

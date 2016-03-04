@@ -3,7 +3,11 @@
  * Search Form
  */
 ?>
-<form method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-	<input type="text" class="search-form__field" autocomplete="off" name="s" id="s" placeholder="Type search term..." />
-	<input type="submit" class="search-from__submit" name="submit"value="search" />
-</form>
+<div class="search">
+	<div class="search__overlay">
+		<form method="get" class="search__form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+			<input type="text" class="search__form__field" autocomplete="off" name="s" id="s" placeholder="Type search term..." />
+			<input type="submit" class="search__from__submit" name="submit"value="search" />
+		</form>
+	<div>
+</div>

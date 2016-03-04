@@ -1,0 +1,9 @@
+/* ------------------ *
+ *      SINGLE       *
+ * ------------------ */
+
+.single .post {
+  @include bp(medium) {
+    @include span-columns(12);
+  }
+}
