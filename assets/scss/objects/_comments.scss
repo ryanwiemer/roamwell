@@ -2,51 +2,36 @@
  *     COMMENTS      *
  * ------------------ */
 
-.comments-link {
-  margin-top: 1em;
+.comments {}
+#comments {
+  margin-bottom: 2em;
+  @extend %clearfix;
+  width: 100%;
+  float: left;
 }
 
-.comments-link a, .touch .comments-link a:hover {
-  background: none;
-  color: gray;
-  border-color: $secondary;
+.comments__title {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: .5em;
 }
 
-.comments-link a:hover {
-  background: $highlight;
-  color: white;
-  border-color: $highlight;
+.comment-list {
+  border: 2px solid $secondary;
+  padding: 1em;
+  a {
+    text-decoration: underline;
+  }
 }
 
-//Comments Section
 .comment-reply-title {
   font-weight: bold;
   text-transform: capitalize;
   margin-bottom: 1em;
 }
 
-.comment-list {
-  //border: 2px solid $secondary;
-}
-
-#comments {
-  margin-bottom: 2em;
-  @extend %clearfix;
-  float: left;
-}
-
 .comment-body {
   @extend %clearfix;
-}
-
-.odd {
-  background: $tertiary;
-  border-radius: 2px;
-  padding: 1em;
-}
-
-.even {
-  padding: 1em;
 }
 
 .comment-author {

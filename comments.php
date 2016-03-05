@@ -5,7 +5,8 @@
 ?>
 
 	<?php if ( have_comments() ) : ?>
-		<div id="comments">
+		<div class="comments" id="comments">
+		<h3 class="comments__title">Comments</h3>
 
 		<ol class="comment-list">
 				<?php wp_list_comments(); ?>

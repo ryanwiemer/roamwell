@@ -28,7 +28,7 @@
 		<?php the_content(); ?>
 	</div>
 
-	<footer class="post__meta">
-		<?php $category_list = get_the_category_list();  printf($category_list); ?>
+	<footer class="post__tags">
+		<?php $tag_list = get_the_tag_list();  printf($tag_list); ?>
 	</footer>
 </article>

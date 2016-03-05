@@ -20,7 +20,6 @@
 .single .post__category {
   @include bp(medium) {
     font-size: 1.25em;
-    margin: 1em 0;
   }
 }
 
@@ -43,5 +42,14 @@
   @include bp(medium) {
     float: right;
     margin: 0;
+  }
+}
+
+.single .post__tags {
+  margin-top: 2em;
+  a {
+    background: $secondary;
+    padding: .25em .5em;
+    margin-right: .5em;
   }
 }
