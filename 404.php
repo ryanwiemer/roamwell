@@ -5,7 +5,7 @@
 
 get_header(); ?>
 
-<div class="container">
+<div class="main">
 
 	<header class="page__header">
 		<h2 class="page__title"><?php _e( 'Uh oh!', 'themeTextDomain' ); ?></h2>

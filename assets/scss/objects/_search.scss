@@ -2,9 +2,9 @@
  *      SEARCH       *
  * ------------------ */
 
-.search {
-  z-index: 999;
-  position: fixed;
+.search__container {
+  z-index: 2;
+  position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
@@ -13,7 +13,11 @@
   visibility: hidden;
 }
 
-.open--search .search {
+.open--search {
+  overflow: hidden;
+}
+
+.open--search .search__container {
   opacity: 1;
   visibility: visible;
 }
@@ -27,10 +31,9 @@
 .search__form {
   margin: 0 auto;
   padding: 1em;
-  background: green;
   display: inline-block;
   position: absolute;
-  z-index: 999;
+  z-index: 99;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -44,10 +47,27 @@
 }
 
 .search__form__field {
-@include span-columns(10);
-z-index: 999;
+  width: 100%;
+  z-index: 999;
+  border-bottom: 2px solid $base;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  outline: 0;
+  background: none;
+  font-family: $body;
+  font-size: 1.5em;
 }
 .search__from__submit {
   @include span-columns(2);
   @include omega();
+}
+
+.btn--close--search {
+  font-size: 1.5em!important;
+  color: $base;
+  position: absolute;
+  top: 1em;
+  right: .35em;
+  z-index: 99;
 }
