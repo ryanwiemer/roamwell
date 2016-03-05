@@ -7,3 +7,41 @@
     @include span-columns(12);
   }
 }
+
+.single .post__title {
+  font-size: 2.5em;
+  line-height: 1.1;
+  width: 100%;
+  @include bp(medium) {
+    @include span-columns(9);
+  }
+}
+
+.single .post__category {
+  @include bp(medium) {
+    font-size: 1.25em;
+    margin: 1em 0;
+  }
+}
+
+.single .post__info {
+  clear: both;
+  width: 100%;
+  @extend %clearfix;
+}
+
+.single .post__comments {
+  float: left;
+  margin: 1em 0;
+  a {
+    display: inline-block;
+    text-align: center;
+    background: $secondary;
+    padding: .5em 1em;
+    color: $base;
+  }
+  @include bp(medium) {
+    float: right;
+    margin: 0;
+  }
+}

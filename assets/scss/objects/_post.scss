@@ -11,29 +11,6 @@
   line-height: 1.4;
 }
 
-.post__comments {
-  display: none;
-  float: right;
-  margin-top: .25em;
-}
-
-.post__comments__link:after {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icons' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "\e905";
-  vertical-align: top;
-  margin-left: .1em;
-}
-
 .post__category {
   margin: .25em 0 .5em;
 }
@@ -44,29 +21,12 @@
 
 .post__header {
   @include span-columns(12);
-  margin-bottom: 1em;
+  margin: 1em 0 1em 0;
 }
 
 .post__title {
   display: inline-block;
   font-weight: bold;
   font-size: 1.25em;
-}
-
-//1st Post specific styles
-.home article:first-child {
-  .post__title {
-    font-size: 1.75em;
-    @include bp(medium) {
-      @include span-columns(10);
-    }
-  }
-  .post__category {
-    @include bp(medium) {
-      @include span-columns(2);
-      text-align: right;
-      margin-top: .8em;
-    }
-  }
-
+  //@include span-columns(10);
 }

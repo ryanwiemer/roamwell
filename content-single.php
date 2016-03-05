@@ -9,14 +9,18 @@
 		the_post_thumbnail();
 	} ?>
 	<header class="post__header">
+		<div class="post__info">
 			<h2 class="post__title">
-				<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'themeTextDomain' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
+				<?php the_title(); ?>
 			</h2>
-			<span class="post__date"><?php echo get_the_date(); ?></span>
 			<div class="post__comments">
 				<?php
-					comments_popup_link( '0', '1', '%', 'post__comments__link', 'Comments are off for this post');
+					comments_popup_link( '0 Comments', '1 Comment', '% Comments', 'post__comments__link', 'Comments closed');
 				?>
+			</div>
+		</div>
+			<div class="post__category">
+				<?php $category_list = get_the_category_list();  printf($category_list); ?>
 			</div>
 	</header>
 

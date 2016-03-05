@@ -14,3 +14,37 @@
     }
   }
 }
+
+
+//1st Post specific styles
+.home article:first-child {
+  .post__title {
+    @include bp(medium) {
+      font-size: 2.5em;
+      line-height: 1.1;
+      //@include span-columns(10);
+    }
+  }
+  .post__category {
+    @include bp(medium) {
+      font-size: 1.25em;
+    }
+  }
+  .post__header {
+    position: relative;
+    &:after{
+      content: "Featured";
+      font-weight: bold;
+      display: inline-block;
+      padding: 1em;
+      background: white;
+      float: right;
+      position: absolute;
+      right: 0;
+      top: 0;
+      //border: 2px solid $secondary;
+      //background: $secondary;
+      //color: white;
+    }
+  }
+}
