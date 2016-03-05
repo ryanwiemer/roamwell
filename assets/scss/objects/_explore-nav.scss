@@ -54,8 +54,8 @@
    }
  }
 
-.open--nav .explore-nav {
-  //left: 0;
+.open--nav .explore-nav li a {
+  background: rgba(0,0,0,.3);
 }
 
  .explore-nav {
@@ -93,7 +93,7 @@
  }
 
 .explore-nav a:hover {
-  background: rgba(0,0,0,.15);
+  background: rgba(0,0,0,.15)!important;
 }
 
  .btn--close {

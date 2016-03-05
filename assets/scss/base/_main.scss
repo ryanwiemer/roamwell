@@ -2,14 +2,13 @@
  *   Main  *
  * ------- */
 body {
-  background: $secondary;
 }
 
 .canvas {
   width: 100%;
   height: 100%;
   min-height: 100vh;
-  position: relative;
+  //position: relative;
   top: 0;
   left: 0;
   margin: 0 auto;
@@ -20,7 +19,11 @@ body {
   transform: translateX(0);
   -webkit-transition: .3s ease all;
   transition: .3s ease all;
-  @include bp(medium) {
+  @include bp(large) {
+    padding: 1em 5% 0 5%;
+  }
+  @include bp(extra-large) {
+    padding: 1em 10% 0 10%;
   }
 }
 
@@ -28,7 +31,7 @@ body {
   margin: 0 auto;
   @extend %clearfix;
   overflow: hidden;
-  position: relative;
+  //position: relative;
   width: 100%;
   height: 100%;
 }
@@ -36,7 +39,6 @@ body {
 .main {
   @include bp(medium) {
     @include span-columns(9);
-    //@include shift(3);
     @include omega();
   }
 }

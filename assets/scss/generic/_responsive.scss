@@ -20,4 +20,9 @@
       @content;
     }
   }
+  @else if $breakpoint == "extra-large" {
+    @media (min-width: 1500px) {
+      @content;
+    }
+  }
 }
