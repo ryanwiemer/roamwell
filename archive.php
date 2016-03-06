@@ -4,7 +4,7 @@
  */
 
 get_header(); ?>
-
+<div class="main">
 	<?php if ( have_posts() ) : ?>
 		<header class="page__header archive__header">
 			<h2 class="page__title">
@@ -58,5 +58,5 @@ get_header(); ?>
 <div class="page-nav">
 	<?php posts_nav_link(' ','newer posts &#8594;','&#8592; older posts'); ?>
 </div>
-
+</div><!--main-->
 <?php get_footer(); ?>

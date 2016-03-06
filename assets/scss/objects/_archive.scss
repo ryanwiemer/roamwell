@@ -1,3 +1,12 @@
 /* ------------------ *
  *      Archives      *
  * ------------------ */
+
+.archive .post {
+  @include bp(medium) {
+    @include span-columns(6);
+    &:nth-child(2n+3) {
+      margin-right: 0;
+    }
+  }
+}

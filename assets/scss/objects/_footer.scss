@@ -3,10 +3,26 @@
  * ------- */
 
 .footer {
-  background: gray;
-  height: 75px;
-  line-height: 75px;
-  color: white;
+  height: 75px!important;
   text-align: center;
   @include span-columns(12);
+  background: $base;
+  color: white;
+  position: relative;
+  &:before {
+    position: absolute;
+    content:'';
+    height: 100%;
+    background: green;
+    height: 75px;
+    left: -1em;
+    right: -1em;
+    bottom: 0;
+    z-index: -1;
+    background: $base;
+  }
+}
+
+.footer__colophon {
+    line-height: 75px;
 }

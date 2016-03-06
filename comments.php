@@ -3,22 +3,13 @@
  * Comments
  */
 ?>
-
+<h3 class="comments__title">Comments</h3>
 	<?php if ( have_comments() ) : ?>
 		<div class="comments" id="comments">
-		<h3 class="comments__title">Comments</h3>
-
-		<ol class="comment-list">
+			<ol class="comment-list">
 				<?php wp_list_comments(); ?>
-		</ol>
-
-		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
-		<nav id="comment-nav-below" class="navigation-comment" role="navigation">
-			<div class="previous"><?php previous_comments_link( __( '&larr; Older Comments', 'simple_blog' ) ); ?></div>
-			<div class="next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'simple_blog' ) ); ?></div>
-		</nav>
-		<?php endif; // check for comment navigation ?>
-</div>
+			</ol>
+	</div>
 	<?php endif; // have_comments() ?>
 
 	<?php
@@ -32,8 +23,13 @@
 		  $comments_args = array(
         'comment_notes_after' => '',
         'comment_notes_before'=>'',
-        'label_submit'=>'add a comment',
-				'title_reply'=>'Leave a comment',
+        'label_submit'=>'Post comment',
+				'title_reply'=>'',
+				'title_reply_to'=>'',
+				'cancel_reply_before'=>'',
+				'cancel_reply_after'=>'',
+				'cancel_reply_link'=>'',
         'comment_field' => '<p class="comment-form-message"><label for="message">Message <span class="required">*</span></label><textarea name="comment"></textarea></p>',
+
         );
         comment_form($comments_args); ?>

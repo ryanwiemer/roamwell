@@ -1,14 +1,11 @@
 /* ------- *
  *   Main  *
  * ------- */
-body {
-}
 
 .canvas {
   width: 100%;
   height: 100%;
   min-height: 100vh;
-  //position: relative;
   top: 0;
   left: 0;
   margin: 0 auto;
@@ -31,12 +28,13 @@ body {
   margin: 0 auto;
   @extend %clearfix;
   overflow: hidden;
-  //position: relative;
   width: 100%;
   height: 100%;
 }
 
 .main {
+  //min-height: 100vh;
+  margin: 0 0 2em 0;
   @include bp(medium) {
     @include span-columns(9);
     @include omega();

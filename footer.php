@@ -5,7 +5,7 @@
 ?>
   <footer class="footer">
     <div class="footer__colophon">
-      <p>&copy; <?php echo date("Y") ?> Lara All rights reserved.</p>
+      &copy; <?php echo date("Y") ?> Lara All rights reserved.
     </div>
   </footer>
 </div><!--canvas-->
