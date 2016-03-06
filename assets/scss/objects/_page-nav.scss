@@ -3,6 +3,8 @@
  * ------------------ */
 
 .page-nav {
+  width: 100%;
+  float: left;
 }
 
 .btn-pagination, .touch .btn-pagination:hover {
@@ -12,7 +14,15 @@
 }
 
 .btn-pagination--prev {
+  float: right;
+  background: $secondary;
+  padding: .5em;
+  text-transform: capitalize;
 }
 
 .btn-pagination--next {
+  float: left;
+  background: $secondary;
+  padding: .5em;
+  text-transform: capitalize;
 }

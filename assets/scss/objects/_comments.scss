@@ -124,6 +124,7 @@
 }
 
 .form-submit input {
+  text-transform: capitalize;
   color: $base;
   background: $secondary;
   @include bp(medium) {
@@ -138,7 +139,7 @@
   cursor: pointer;
 }
 
-.required, .comment-form-url, .reply-title {
+.comment-form-url, .reply-title {
   display: none;
 }
 

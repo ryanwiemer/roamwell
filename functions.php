@@ -159,6 +159,15 @@ if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page();
 }
 
+//Custom CSS Class on Homepage
+function my_class_names($classes) {
+	// add 'class-name' to the $classes array
+	if( is_home() &&!is_paged() ) $classes[] = 'home--page1';
+	// return the $classes array
+	return $classes;
+}
+add_filter('body_class','my_class_names');
+
 
 ////////////////////////
 //CSS & JS Scripts//////
@@ -166,6 +175,7 @@ if( function_exists('acf_add_options_page') ) {
 
 //Enqueue scripts and styles.
 function enqueueFiles() {
+  wp_enqueue_script( 'pace',  get_template_directory_uri() . '/build/js/pace.min.js', '', '', false);
   wp_enqueue_style( 'style',  get_stylesheet_directory_uri() . '/build/css/style.min.css');
   wp_enqueue_script( 'scripts',  get_template_directory_uri() . '/build/js/scripts.min.js', '', '', true);
 }

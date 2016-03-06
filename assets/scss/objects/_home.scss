@@ -2,11 +2,11 @@
  *       Home         *
  * ------------------ */
 
-.home article:first-child {
+.home--page1 .post:first-child {
   @include span-columns(12);
 }
 
-.post {
+.home--page1 .post {
   @include bp(medium) {
     @include span-columns(6);
     &:nth-child(2n+3) {
@@ -15,8 +15,15 @@
   }
 }
 
+.paged article {
+  @include omega(2n);
+}
+ .search-results article:nth-child(2n+3) {
+  margin-right: 0;
+ }
+
 //1st Post specific styles
-.home article:first-child {
+.home--page1  .post:first-child {
   .post__title {
     @include bp(medium) {
       font-size: 2.5em;
@@ -40,9 +47,6 @@
       position: absolute;
       right: 0;
       top: 0;
-      //border: 2px solid $secondary;
-      //background: $secondary;
-      //color: white;
     }
   }
 }

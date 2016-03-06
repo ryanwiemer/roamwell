@@ -5,6 +5,9 @@
 //General Post Styling
 .post {
   margin-bottom: 2em;
+  @include bp(medium) {
+    @include span-columns(6);
+  }
 }
 
 .post p {

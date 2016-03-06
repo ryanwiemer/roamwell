@@ -5,3 +5,12 @@
 .explore-nav, .canvas, .explore-nav li a, .search__overlay {
   transition: all .2s;
 }
+
+.main {
+  //transition: all .35s;
+  //opacity: 0;
+}
+
+.pace-done .main {
+  opacity: 1;
+}

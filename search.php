@@ -26,9 +26,9 @@ get_header(); ?>
 
 	<?php endif; ?>
 
+	<div class="page-nav">
+		<?php posts_nav_link(' ','newer posts &#8594;','&#8592; older posts'); ?>
+	</div>
 </div> <!--main-->
-<div class="page-nav">
-	<?php posts_nav_link(' ','newer posts &#8594;','&#8592; older posts'); ?>
-</div>
 
 <?php get_footer(); ?>

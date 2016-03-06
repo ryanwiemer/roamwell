@@ -14,7 +14,7 @@
   <?php wp_head(); ?>
   <!-- Google Analytics -->
 </head>
-<body <?php body_class('loading'); ?>>
+<body <?php body_class(); ?>>
   <?php get_search_form(); ?>
   <div class="wrapper">
     <?php if( have_rows('category_navigation','option') ): ?>

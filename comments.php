@@ -29,7 +29,7 @@
 				'cancel_reply_before'=>'',
 				'cancel_reply_after'=>'',
 				'cancel_reply_link'=>'',
-        'comment_field' => '<p class="comment-form-message"><label for="message">Message <span class="required">*</span></label><textarea name="comment"></textarea></p>',
+        'comment_field' => '<p class="comment-form-message"><label for="message">Message</label><textarea name="comment"></textarea></p>',
 
         );
         comment_form($comments_args); ?>
