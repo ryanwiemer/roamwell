@@ -38,11 +38,12 @@
   .post__header {
     position: relative;
     &:after{
-      content: "Featured";
+      content: "Featured Article";
       font-weight: bold;
       display: inline-block;
       padding: 1em;
       background: white;
+      border: 2px solid $secondary;
       float: right;
       position: absolute;
       right: 0;

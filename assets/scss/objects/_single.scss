@@ -36,11 +36,11 @@
     display: inline-block;
     text-align: center;
     background: $secondary;
-    padding: .5em 1em;
+    padding: 1em;
     color: $base;
     &:hover {
       background: $base;
-      color: white; 
+      color: white;
     }
   }
   @include bp(medium) {
