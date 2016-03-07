@@ -38,6 +38,10 @@
     background: $secondary;
     padding: .5em 1em;
     color: $base;
+    &:hover {
+      background: $base;
+      color: white; 
+    }
   }
   @include bp(medium) {
     float: right;

@@ -3,16 +3,38 @@
  * ------- */
 
 .footer {
-  height: 5em!important;
   text-align: center;
   @include span-columns(12);
-  background: $base;
-  color: white;
   position: relative;
-  margin: 0 -1em;
   width: 100%;
+  line-height: 2em;
+  margin-bottom: 2em;
+  a {
+    text-decoration: underline;
+    &:hover {
+    }
+  }
+  @include bp(medium) {
+    @include span-columns(9);
+    @include shift(3);
+    line-height: 4em;
+    height: 4em!important;
+    margin-bottom: 1em;
+  }
 }
 
-.footer__colophon {
-    line-height: 5em;
+.footer__copyright {
+  @include bp(small) {
+    float: left;
+  }
+}
+
+.footer__social {
+  @include bp(small) {
+    float: right;
+  }
+  a {
+    display: inline-block;
+    margin-left: .5em;
+  }
 }

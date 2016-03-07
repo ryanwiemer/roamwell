@@ -85,7 +85,7 @@
 
 //Comment Form
 .comment-form {
-  margin-bottom: 3em;
+  margin-bottom: 0;
 }
 
 .comment-form input, .comment-form textarea {
@@ -146,7 +146,14 @@
 .logged-in-as a {
   color: $base;
 }
+.logged-in-as a:nth-child(2){
+  text-decoration: underline;
+}
 
 .logged-in-as a:hover {
   color: lighten($base, 20%);
+}
+
+.post__comments a {
+  
 }

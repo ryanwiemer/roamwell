@@ -175,8 +175,9 @@ add_filter('body_class','my_class_names');
 
 //Enqueue scripts and styles.
 function enqueueFiles() {
-  wp_enqueue_script( 'pace',  get_template_directory_uri() . '/build/js/pace.min.js', '', '', false);
+  wp_enqueue_script( 'pace',  get_template_directory_uri() . '/assets/js/vendor/pace.min.js', '', '', false);
   wp_enqueue_style( 'style',  get_stylesheet_directory_uri() . '/build/css/style.min.css');
+  wp_enqueue_script( 'jquery-script',  get_template_directory_uri() . '/assets/js/vendor/jquery-2.2.1.min.js', '', '', true);
   wp_enqueue_script( 'scripts',  get_template_directory_uri() . '/build/js/scripts.min.js', '', '', true);
 }
 

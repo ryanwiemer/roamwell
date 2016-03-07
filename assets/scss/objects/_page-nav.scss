@@ -5,24 +5,21 @@
 .page-nav {
   width: 100%;
   float: left;
-}
-
-.btn-pagination, .touch .btn-pagination:hover {
-}
-
-.btn-pagination:hover {
+  a {
+    background: $secondary;
+    padding: .5em;
+    text-transform: capitalize;
+    &:hover {
+      background: $base;
+      color: white;
+    }
+  }
 }
 
 .btn-pagination--prev {
   float: right;
-  background: $secondary;
-  padding: .5em;
-  text-transform: capitalize;
 }
 
 .btn-pagination--next {
   float: left;
-  background: $secondary;
-  padding: .5em;
-  text-transform: capitalize;
 }
