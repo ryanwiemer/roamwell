@@ -127,7 +127,7 @@
   text-transform: capitalize;
   color: $base;
   background: $secondary;
-  padding: 1em;
+  padding: .5em;
   @include bp(medium) {
     max-width: 10em;
   }
