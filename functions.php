@@ -168,6 +168,23 @@ function my_class_names($classes) {
 }
 add_filter('body_class','my_class_names');
 
+//Number of Posts on Archive Pages
+function number_of_posts_on_archive($query){
+    if ($query->is_archive) {
+            $query->set('posts_per_page', 8);
+   }
+    return $query;
+}
+add_filter('pre_get_posts', 'number_of_posts_on_archive');
+
+//Number of Posts on Search Results 
+function number_of_posts_on_search($query){
+    if ($query->is_search) {
+            $query->set('posts_per_page', 8);
+   }
+    return $query;
+}
+add_filter('pre_get_posts', 'number_of_posts_on_search');
 
 ////////////////////////
 //CSS & JS Scripts//////

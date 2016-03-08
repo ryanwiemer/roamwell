@@ -7,7 +7,11 @@
 <article <?php post_class('post__active'); ?>>
 	<?php  if ( has_post_thumbnail() ) {
 		the_post_thumbnail();
-	} ?>
+		}
+	  else {
+	    echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/build/img/placeholder.jpg"/>';
+	  }
+	?>
 	<header class="post__header">
 		<div class="post__info">
 			<h2 class="post__title">

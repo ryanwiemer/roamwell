@@ -15,13 +15,18 @@
   }
 }
 
-.paged article, .archive article, .search-results article {
-  &:nth-child(3n){
+.paged article {
+  &:nth-child(2n){
     margin-right: 0;
   }
 }
+
+.archive article:nth-child(2n+3) {
+  margin-right: 0;
+}
+
  .search-results article:nth-child(2n+3) {
-  //margin-right: 0;
+  margin-right: 0;
  }
 
 //1st Post specific styles
