@@ -10,3 +10,7 @@
     }
   }
 }
+
+.archive article:nth-child(2n+3) {
+  margin-right: 0;
+}

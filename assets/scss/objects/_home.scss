@@ -21,14 +21,6 @@
   }
 }
 
-.archive article:nth-child(2n+3) {
-  margin-right: 0;
-}
-
- .search-results article:nth-child(2n+3) {
-  margin-right: 0;
- }
-
 //1st Post specific styles
 .home--page1  .post:first-child {
   .post__title {
@@ -45,16 +37,17 @@
   .post__header {
     position: relative;
     &:after{
-      content: "Featured Article";
+      content: "Featured Post";
       font-weight: bold;
       display: inline-block;
       padding: 1em;
-      background: white;
+      //background: $highlight;
       border: 2px solid $secondary;
       float: right;
       position: absolute;
       right: 0;
       top: 0;
+      color: $highlight;
     }
   }
 }

@@ -95,12 +95,14 @@
   outline: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
+  border-radius: 0;
   padding: .5em;
   font-family: $body;
   font-size: 1em;
 }
 
 .comment-form textarea {
+  border-radius: 0;
   box-shadow: none;
   -moz-box-shadow: none;
   height: 300px;
@@ -124,6 +126,7 @@
 }
 
 .form-submit input {
+  border-radius: 0;
   text-transform: capitalize;
   color: $base;
   background: $secondary;
@@ -147,14 +150,11 @@
 .logged-in-as a {
   color: $base;
 }
+
 .logged-in-as a:nth-child(2){
   text-decoration: underline;
 }
 
 .logged-in-as a:hover {
   color: lighten($base, 20%);
-}
-
-.post__comments a {
-
 }
