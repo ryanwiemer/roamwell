@@ -127,6 +127,7 @@
 
 .form-submit input {
   border-radius: 0;
+  border: none;
   text-transform: capitalize;
   color: $base;
   background: $secondary;
@@ -137,8 +138,7 @@
 }
 
 .form-submit input:hover {
-  background: $base;
-  border-color: $base;
+  background: $tertiary;
   color: white;
   cursor: pointer;
 }

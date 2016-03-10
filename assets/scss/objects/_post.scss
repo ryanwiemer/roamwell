@@ -20,6 +20,10 @@
 
 .post__category a {
   text-decoration: underline;
+  color: $tertiary;
+  &:hover {
+    color: $base;
+  }
 }
 
 .post__header {

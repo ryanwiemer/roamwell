@@ -12,6 +12,7 @@
   a {
     text-decoration: underline;
     &:hover {
+      color: $tertiary;
     }
   }
   @include bp(medium) {

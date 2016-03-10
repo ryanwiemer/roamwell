@@ -40,14 +40,19 @@
       content: "Featured Post";
       font-weight: bold;
       display: inline-block;
-      padding: 1em;
-      //background: $highlight;
-      border: 2px solid $secondary;
+      padding: 1em 0;
       float: right;
       position: absolute;
       right: 0;
       top: 0;
-      color: $highlight;
+      color: $tertiary;
     }
+  }
+}
+
+.read-more {
+  color: $tertiary;
+  &:hover {
+    color: $base;
   }
 }

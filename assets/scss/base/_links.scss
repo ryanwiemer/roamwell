@@ -5,3 +5,11 @@ a {
   text-decoration: none;
   color: $base;
 }
+
+.single p a {
+  text-decoration: underline;
+  color: $tertiary;
+  &:hover {
+    color: $base;
+  }
+}
