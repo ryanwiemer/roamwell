@@ -56,6 +56,9 @@
 
 .comment-author cite {
   font-weight: bold;
+  a:hover {
+    color: $tertiary;
+  }
 }
 
 .comment-reply-title {
@@ -103,7 +106,7 @@
 }
 
 .comment-form input:focus, .comment-form textarea:focus {
-  outline: none !important;
+  outline: none!important;
   box-shadow: 0;
 }
 
@@ -134,18 +137,21 @@
   cursor: pointer;
 }
 
+.comment-edit-link {
+  text-decoration: underline!important;
+  color: $tertiary!important;
+  cursor: pointer!important;
+  &:hover {
+    color: $base!important;
+  }
+}
+
+//Post Author Special Styling
+.bypostauthor .comment-body {
+  border-color: $tertiary;
+}
+
+//Remove These Fields
 .comment-form-url, .reply-title {
-  display: none;
-}
-
-.logged-in-as a {
-  color: $base;
-}
-
-.logged-in-as a:nth-child(2){
-  text-decoration: underline;
-}
-
-.logged-in-as a:hover {
-  color: lighten($base, 20%);
+  //display: none;
 }
