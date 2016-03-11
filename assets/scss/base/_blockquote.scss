@@ -2,4 +2,25 @@
  *  Blockquote  *
  * ------- */
 
- 
+ .post__content blockquote {
+  color: $tertiary;
+  font-size: 1.5em;
+  font-weight: bold;
+  background: $secondary;
+  padding: 1em .5em;
+  margin-bottom: 1em;
+  position: relative;
+  p {
+    line-height: 1.2!important;
+    margin: 0!important;
+  }
+ }
+
+.post__content blockquote:before {
+   color: $tertiary;
+   content: "\201C";
+   font-size: 3em;
+   margin-bottom: 0;
+   position: absolute;
+   top: -.25em;
+ }

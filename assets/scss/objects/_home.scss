@@ -40,12 +40,16 @@
       content: "Featured Post";
       font-weight: bold;
       display: inline-block;
-      padding: 1em 0;
+      border: 2px solid $tertiary;
+      padding: 1em;
+      //padding: 1em;
       float: right;
       position: absolute;
       right: 0;
       top: 0;
+      //background: $secondary;
       color: $tertiary;
+
     }
   }
 }
@@ -54,5 +58,11 @@
   color: $tertiary;
   &:hover {
     color: $base;
+  }
+}
+
+article:hover {
+  img {
+    //opacity: .35;
   }
 }

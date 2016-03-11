@@ -150,7 +150,7 @@ add_action( 'init', 'register_my_menu' );
 //Wordpress Excerpt More
 function et_excerpt_more($more) {
     global $post;
-    return '<a href="'. get_permalink($post->ID) . '" class="read-more">[...]</a>';
+    return '<a href="'. get_permalink($post->ID) . '" class="read-more"> [...]</a>';
 }
 add_filter('excerpt_more', 'et_excerpt_more');
 
@@ -177,7 +177,7 @@ function number_of_posts_on_archive($query){
 }
 add_filter('pre_get_posts', 'number_of_posts_on_archive');
 
-//Number of Posts on Search Results 
+//Number of Posts on Search Results
 function number_of_posts_on_search($query){
     if ($query->is_search) {
             $query->set('posts_per_page', 8);

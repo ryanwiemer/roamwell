@@ -23,6 +23,9 @@
   }
   a {
     color: $tertiary;
+    &:hover {
+      color: $base;
+    }
   }
 }
 
@@ -63,4 +66,13 @@
       color: white;
     }
   }
+}
+
+//Misc Single Styling & Formatting
+.single .post__content strong {
+  font-weight: bold;
+}
+
+.single .post__content del {
+  color: $tertiary;
 }

@@ -16,20 +16,24 @@
 }
 
 
-
-//Category Header
 .page__title--category {
   //border: 2px solid $highlight;
+  background: $secondary;
   border: none;
-  //background: $tertiary;
-  color: $base;
   width: 100%;
+  height: 250px;
   text-align: center;
-  //height: 250px;
-  //line-height: 250px;
-  //margin-bottom: .5em;
   @include bp(medium) {
-    //height: 307px;
-    //line-height: 307px;
+    height: 307px;
+  }
+  span {
+    color: $base;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    line-height: 250px;
+    @include bp(medium) {
+      line-height: 307px;
+    }
   }
 }
