@@ -8,9 +8,9 @@
   <a href="<?php the_permalink(); ?>">
     <?php  if ( has_post_thumbnail() ) {
     	the_post_thumbnail();
-      } 
+      }
       else {
-  	    echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/build/img/placeholder.jpg"/>';
+  	    echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/build/img/placeholder.png"/>';
   	  }
 	   ?>
   </a>

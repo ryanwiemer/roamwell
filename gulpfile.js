@@ -36,6 +36,13 @@ gulp.task('fonts', function() {
     .pipe(browserSync.reload({stream:true}));
 });
 
+//Move Vendor JS
+gulp.task('vendor', function() {
+  gulp.src(['assets/js/vendor/*.*'])
+    .pipe(gulp.dest('build/js/vendor'))
+    .pipe(browserSync.reload({stream:true}));
+});
+
 // Compile Sass & Minify CSS
 gulp.task('sass', function() {
   gulp.src(['assets/scss/style.scss'])
@@ -68,4 +75,4 @@ gulp.task('watch', function() {
 });
 
 // Default Task
-gulp.task('default', ['sass','js','images','fonts','browser-sync', 'watch']);
+gulp.task('default', ['sass','js','images','fonts','vendor','browser-sync', 'watch']);

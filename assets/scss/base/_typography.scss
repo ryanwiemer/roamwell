@@ -3,7 +3,7 @@
  * ------- */
 
 //Font Families
-$headline: "brandon-grotesque","Helvetica", sans-serif;
+//$headline: "brandon-grotesque","Helvetica", sans-serif;
 $body: "brandon-grotesque","Helvetica", sans-serif;
 
 html {
@@ -17,7 +17,6 @@ body{
     font-size: 112.5%;
   }
 }
-
 
 //Icon Fonts
 @font-face {
@@ -45,39 +44,18 @@ body{
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-bookmark:before {
-    content: "\e901";
-}
-.icon-chevron-with-circle-up:before {
-    content: "\e902";
-}
 .icon-cross:before {
     content: "\e909";
-}
-.icon-grid:before {
-    content: "\e903";
 }
 .icon-map:before {
     content: "\e904";
 }
-.icon-message:before {
-    content: "\e905";
+.icon-medal:before {
+    content: "\e902";
 }
-.icon-quote:before {
-    content: "\e906";
-}
-.icon-star-outlined:before {
-    content: "\e907";
+.icon-news:before {
+    content: "\e900";
 }
 .icon-star:before {
     content: "\e908";
-}
-.icon-facebook-with-circle:before {
-    content: "\e90a";
-}
-.icon-instagram-with-circle:before {
-    content: "\e90c";
-}
-.icon-pinterest-with-circle:before {
-    content: "\e90d";
 }

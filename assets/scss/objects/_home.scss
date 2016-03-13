@@ -4,6 +4,20 @@
 
 .home--page1 .post:first-child {
   @include span-columns(12);
+  .post__title {
+    @include bp(medium) {
+      @include span-columns(9);
+    }
+  }
+  .post__category {
+    float: left;
+    width: 100%;
+    @extend %clearfix;
+    margin: .25em 0 .5em;
+  }
+  .post-categories {
+
+  }
 }
 
 .home--page1 .post {
@@ -36,21 +50,6 @@
   }
   .post__header {
     position: relative;
-    &:after{
-      content: "Featured Post";
-      font-weight: bold;
-      display: inline-block;
-      border: 2px solid $tertiary;
-      padding: 1em;
-      //padding: 1em;
-      float: right;
-      position: absolute;
-      right: 0;
-      top: 0;
-      //background: $secondary;
-      color: $tertiary;
-
-    }
   }
 }
 

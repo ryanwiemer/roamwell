@@ -7,10 +7,16 @@ img {
 	height: auto;
 }
 
+.post__content img {
+	margin-bottom: 1.45em;
+}
 
 //image captions
 .wp-caption {
 	text-align: center;
+	img {
+		margin-bottom: .5em;
+	}
 }
 
 .wp-caption-text {

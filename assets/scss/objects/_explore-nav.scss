@@ -5,8 +5,9 @@
 .btn--explore {
   padding: .25em .5em;
   @include span-columns(12);
-  background: $secondary!important;
+  background: $base!important;
   margin-bottom: 1em;
+  color: white;
   &:before {
     font-family: 'icons'!important;
     speak: none;

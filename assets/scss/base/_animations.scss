@@ -6,11 +6,36 @@
   transition: all .2s;
 }
 
-.main {
-  //transition: all .35s;
-  //opacity: 0;
+.wrapper {
+  transition: all .35s;
+  opacity: 1;
+  @include bp(medium) {
+    opacity: 0;
+  }
 }
 
-.pace-done .main {
+.pace-done .wrapper {
   opacity: 1;
+}
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: $tertiary;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 6px;
 }

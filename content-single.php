@@ -9,7 +9,7 @@
 		the_post_thumbnail();
 		}
 	  else {
-	    echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/build/img/placeholder.jpg"/>';
+	    echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/build/img/placeholder.png"/>';
 	  }
 	?>
 	<header class="post__header">

@@ -56,11 +56,15 @@
 }
 
 .single .post__tags {
+  @extend %clearfix;
   margin-top: 2em;
+  margin-bottom: -.5em;
   a {
+    float: left;
     background: $secondary;
     padding: .25em .5em;
     margin-right: .5em;
+    margin-bottom: .5em;
     &:hover {
       background: $tertiary;
       color: white;
@@ -69,10 +73,10 @@
 }
 
 //Misc Single Styling & Formatting
-.single .post__content strong {
+.single .post__content strong, .page .post__content strong {
   font-weight: bold;
 }
 
-.single .post__content del {
+.single .post__content del, .page .post__content del {
   color: $tertiary;
 }
