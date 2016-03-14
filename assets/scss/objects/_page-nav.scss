@@ -16,6 +16,11 @@
   }
 }
 
+.touchevents .page-nav a:hover {
+  background: $secondary;
+  color: $base;
+}
+
 .btn-pagination--prev {
   float: right;
 }

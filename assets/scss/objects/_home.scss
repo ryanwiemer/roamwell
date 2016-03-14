@@ -4,19 +4,11 @@
 
 .home--page1 .post:first-child {
   @include span-columns(12);
-  .post__title {
-    @include bp(medium) {
-      @include span-columns(9);
-    }
-  }
   .post__category {
     float: left;
     width: 100%;
     @extend %clearfix;
     margin: .25em 0 .5em;
-  }
-  .post-categories {
-
   }
 }
 
@@ -60,8 +52,6 @@
   }
 }
 
-article:hover {
-  img {
-    //opacity: .35;
-  }
+.touchevents .read-more:hover {
+  color: $tertiary;
 }

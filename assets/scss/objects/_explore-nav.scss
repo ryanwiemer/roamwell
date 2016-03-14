@@ -28,6 +28,10 @@
   }
 }
 
+.touchevents .btn--explore:hover {
+  background: $base!important;
+}
+
  .overlay--nav {
    position: absolute;
    top: 0;
@@ -60,7 +64,8 @@
   background: rgba(0,0,0,.3);
 }
 
- .explore-nav {
+.explore-nav {
+   z-index: 0;
    position: fixed;
    top: 0;
    left: 0;
@@ -93,6 +98,15 @@
      line-height: 25vh;
    }
  }
+
+.touchevents .explore-nav {
+  position: absolute;
+}
+
+.touchevents .open--nav .explore-nav {
+  position: fixed;
+}
+
 
 .explore-nav a:hover {
   background: rgba(0,0,0,.15)!important;

@@ -61,6 +61,10 @@
   }
 }
 
+.touchevents .comment-author cite a:hover {
+  color: $base;
+}
+
 .comment-reply-title {
   font-weight: bold;
   font-size: 1.5em;
@@ -137,6 +141,11 @@
   cursor: pointer;
 }
 
+.touchevents .form-submit input:hover {
+  background: $secondary;
+  color: $base;
+}
+
 .comment-edit-link {
   text-decoration: underline!important;
   color: $tertiary!important;
@@ -144,6 +153,10 @@
   &:hover {
     color: $base!important;
   }
+}
+
+.touchevents .comment-edit-link:hover {
+  color: $tertiary!important;
 }
 
 //Post Author Special Styling

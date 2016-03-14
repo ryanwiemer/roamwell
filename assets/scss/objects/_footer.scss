@@ -24,6 +24,10 @@
   }
 }
 
+.touchevents .footer a:hover {
+  color: $base;
+}
+
 .footer__copyright {
   @include bp(small) {
     float: left;

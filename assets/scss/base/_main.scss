@@ -33,6 +33,7 @@
   margin: 0 0 2em 0;
   @include span-columns(12);
   min-height: 300px;
+  min-height: calc(100vh - 8em);
   @include bp(medium) {
     min-height: calc(100vh - 8em);
     @include span-columns(9);

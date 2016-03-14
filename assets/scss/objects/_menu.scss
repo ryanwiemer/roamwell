@@ -19,6 +19,10 @@
   }
 }
 
+.touchevents .header a:hover {
+  color: $base;
+}
+
 .logo {
   @extend %clearfix;
   text-align: center;

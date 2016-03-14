@@ -193,6 +193,7 @@ add_filter('pre_get_posts', 'number_of_posts_on_search');
 //Enqueue scripts and styles.
 function enqueueFiles() {
   wp_enqueue_script( 'pace',  get_template_directory_uri() . '/build/js/vendor/pace.min.js', '', '', false);
+  wp_enqueue_script( 'modernizr',  get_stylesheet_directory_uri() . '/build/js/vendor/modernizr.min.js','', '', false);
   wp_enqueue_style( 'style',  get_stylesheet_directory_uri() . '/build/css/style.min.css');
   wp_enqueue_script( 'jquery-script',  get_template_directory_uri() . '/build/js/vendor/jquery-2.2.1.min.js', '', '', true);
   wp_enqueue_script( 'scripts',  get_template_directory_uri() . '/build/js/scripts.min.js', '', '', true);

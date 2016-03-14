@@ -29,6 +29,10 @@
   }
 }
 
+.touchevents .single .post__category a:hover {
+  color: $tertiary;
+}
+
 .single .post__info {
   clear: both;
   width: 100%;
@@ -55,6 +59,11 @@
   }
 }
 
+.touchevents .single .post__comments a:hover {
+  background: $secondary;
+  color: $base;
+}
+
 .single .post__tags {
   @extend %clearfix;
   margin-top: 2em;
@@ -70,6 +79,11 @@
       color: white;
     }
   }
+}
+
+.touchevents .single .post__tags a:hover {
+  background: $secondary;
+  color: $base;
 }
 
 //Misc Single Styling & Formatting
