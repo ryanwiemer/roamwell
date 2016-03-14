@@ -35,7 +35,7 @@
   <div class="canvas">
   <header class="header">
     <nav class="nav">
-      <a href="<?php echo get_site_url() ?>"><h1 class="logo"><?php echo get_bloginfo( 'name' ); ?></h1></a>
+      <a href="<?php echo get_site_url() ?>"><h1 class="logo">Roam <span>Well</span></h1></a>
       <?php wp_nav_menu( array( 'menu' => 'Menu 1', 'container' => false, 'menu_class' => '', 'container_class' => '') ); ?>
       <button class="btn btn--explore">Explore</button>
     </nav>

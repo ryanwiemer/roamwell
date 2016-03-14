@@ -21,19 +21,26 @@
 
 .logo {
   @extend %clearfix;
-  height: 200px;
   text-align: center;
-  line-height: 200px;
-  border: 1px solid $base;
-  margin-bottom: .5em;
-  font-size: 2em;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 0 0 .5em 0;
+  font-size: 3em;
   font-weight: bold;
   color: $base;
+  letter-spacing: .1em;
+  display: inline-block;
+  width: 100%;
+  span {
+    color: $tertiary;
+  }
+  @include bp(medium) {
+    width: auto;
+    font-size: 3.25em;
+  }
 }
 
 .nav {
-  @include bp(medium) {
-  }
   li {
     margin-bottom: .5em;
     @include span-columns(6);

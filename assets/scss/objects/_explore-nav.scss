@@ -6,6 +6,7 @@
   padding: .25em .5em;
   @include span-columns(12);
   background: $base!important;
+  margin-top: .5em;
   margin-bottom: 1em;
   color: white;
   &:before {
