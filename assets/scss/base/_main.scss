@@ -11,8 +11,8 @@
   padding: 1em 1em 0 1em;
   background: white;
   @extend %clearfix;
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
   @include bp(large) {
     padding: 1em 5% 0 5%;
   }
@@ -27,13 +27,14 @@
   overflow: hidden;
   width: 100%;
   height: 100%;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 .main {
   margin: 0 0 2em 0;
   @include span-columns(12);
   min-height: 300px;
-  min-height: calc(100vh - 8em);
   @include bp(medium) {
     min-height: calc(100vh - 8em);
     @include span-columns(9);
