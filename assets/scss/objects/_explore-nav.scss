@@ -65,11 +65,12 @@
 }
 
 .explore-nav {
-   z-index: -1;
+   z-index: 0;
    position: fixed;
    top: 0;
    left: 0;
    width: 75%;
+   visibility: hidden;
    @include bp(medium) {
       left: 0;
       width: 25%;
@@ -98,6 +99,10 @@
      line-height: 25vh;
    }
  }
+
+.open--nav .explore-nav {
+  visibility: visible;
+}
 
 .explore-nav a:hover {
   background: rgba(0,0,0,.15)!important;
