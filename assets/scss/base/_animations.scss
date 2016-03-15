@@ -2,17 +2,23 @@
  *  Animations  *
  * ------------ */
 
-.canvas, .explore-nav li a, .search__overlay, .btn, .post-categories a, .read-more, .post__comments a, .form-submit input, .footer__social a, .post__tags a, .post__content p a, .comment-edit-link, .comment-respond a, .comment-author cite a, .nav a {
+.explore-nav li a, .search__overlay, .btn, .post-categories a, .read-more, .post__comments a, .form-submit input, .footer__social a, .post__tags a, .post__content p a, .comment-edit-link, .comment-respond a, .comment-author cite a, .nav a {
+  -webkit-transition: all 0.2s;
   transition: all .2s;
 }
 
 //Menu Transition
-.explore-nav {
-  -webkit-transition: all 0.1s;
-  transition: all 0.1s;
+.explore-nav, .overlay--nav {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
 }
 
 .open--nav .explore-nav {
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+
+.canvas {
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
 }
