@@ -28,7 +28,7 @@
   text-align: center;
   line-height: 1;
   text-transform: uppercase;
-  margin: 0 0 .5em 0;
+  margin: .25em 0 .5em 0;
   font-size: 3em;
   font-weight: bold;
   color: $base;
@@ -39,12 +39,14 @@
     color: $tertiary;
   }
   @include bp(medium) {
+    margin: 0 0 .5em 0;
     width: auto;
     font-size: 3.25em;
   }
 }
 
 .nav {
+  @extend %clearfix;
   li {
     margin-bottom: .5em;
     @include span-columns(6);

@@ -75,6 +75,7 @@ return $query;
 }
 add_filter('pre_get_posts','SearchFilter');
 
+
 ////////////////////////
 //Edits to Image Output/
 ////////////////////////
@@ -96,7 +97,6 @@ function filter_ptags_on_images($content){
   return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
 }
 add_filter('the_content', 'filter_ptags_on_images');
-
 
 // Unset 'Large' size
 function sgr_filter_image_sizes( $sizes) {

@@ -9,22 +9,23 @@
 
 //Menu Transition
 .explore-nav, .overlay--nav {
-  -webkit-transition: all 0.35s;
-  transition: all 0.35s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .open--nav .explore-nav {
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
 }
 
 .canvas {
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
 }
 
 .wrapper {
-  transition: all .35s;
+  -webkit-transition: all 0.2s;
+  transition: all .2s;
   opacity: 1;
   @include bp(medium) {
     opacity: 0;
