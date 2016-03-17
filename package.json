@@ -1,7 +1,7 @@
 {
-  "name": "Lara",
+  "name": "Roam Well",
   "version": "1.0.0",
-  "description": "Custom WordPress theme for Lara",
+  "description": "Custom WordPress theme for Roam Well Blog",
   "main": "index.php",
   "repository": {
     "type": "git",

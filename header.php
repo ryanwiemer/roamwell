@@ -11,9 +11,9 @@
   <title><?php wp_title('|', true, 'right'); ?></title>
   <script type="text/javascript">
     var woffEnabled = true;
-    var customPath = "<?php echo get_site_url(); ?>/wp-content/themes/lara/build/fonts";
+    var customPath = "<?php echo get_site_url(); ?>/wp-content/themes/roamwell/build/fonts";
   </script>
-  <script type="text/javascript" src="<?php echo get_site_url(); ?>/wp-content/themes/lara/build/js/vendor/fonts.min.js"></script>
+  <script type="text/javascript" src="<?php echo get_site_url(); ?>/wp-content/themes/roamwell/build/js/vendor/fonts.min.js"></script>
   <?php wp_head(); ?>
   <!-- Google Analytics -->
 </head>

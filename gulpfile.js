@@ -17,7 +17,7 @@ gulp.task('browser-sync', function() {
   //initialize browsersync
   browserSync.init({
   //browsersync with a php server
-  proxy: "lara.dev",
+  proxy: "roamwellblog.dev",
   notify: false
   });
 });
