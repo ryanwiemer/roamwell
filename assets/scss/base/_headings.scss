@@ -3,11 +3,11 @@
  * ------- */
 
 h1,h2,h3,h4,h5,h6 {
+	font-family: $headline;
 	line-height: 1.4;
 }
 
 .single .post__content h1, .single .post__content h2, .single .post__content h3, .page .post__content h1, .page .post__content h2, .page .post__content h3 {
-	font-weight: bold;
 	margin-bottom: .25em;
 }
 

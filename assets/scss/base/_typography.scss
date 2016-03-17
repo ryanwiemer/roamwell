@@ -3,8 +3,8 @@
  * ------- */
 
 //Font Families
-//$headline: "brandon-grotesque","Helvetica", sans-serif;
-$body: "brandon-grotesque","Helvetica", sans-serif;
+$headline: "BrandonGrotesqueWeb-Bold","Helvetica", sans-serif;
+$body: "BrandonTextWeb-Regular","Helvetica", sans-serif;
 
 html {
   color: $base;
@@ -14,7 +14,7 @@ body{
   font-family: $body;
   font-size: 100%;
   @include bp(medium) {
-    font-size: 112.5%;
+    font-size: 110%;
   }
 }
 

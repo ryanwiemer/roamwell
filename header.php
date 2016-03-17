@@ -9,8 +9,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" type="image/x-icon" />
   <title><?php wp_title('|', true, 'right'); ?></title>
-  <script src="https://use.typekit.net/nek3xtt.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script type="text/javascript">
+    var woffEnabled = true;
+    var customPath = "<?php echo get_site_url(); ?>/wp-content/themes/lara/build/fonts";
+  </script>
+  <script type="text/javascript" src="<?php echo get_site_url(); ?>/wp-content/themes/lara/build/js/vendor/fonts.min.js"></script>
   <?php wp_head(); ?>
   <!-- Google Analytics -->
 </head>
