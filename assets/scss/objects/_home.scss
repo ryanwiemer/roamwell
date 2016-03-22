@@ -46,6 +46,7 @@
 }
 
 .read-more {
+  text-decoration: none!important;
   color: $tertiary;
   &:hover {
     color: $base;
