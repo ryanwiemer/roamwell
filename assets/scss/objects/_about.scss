@@ -1,3 +1,25 @@
 /* ------- *
  *  ABOUT  *
  * ------- */
+.single .alignleft, .page .alignleft {
+  @include bp(medium) {
+    @include span-columns(6);
+  }
+}
+
+.page .alignright {
+  @include bp(medium) {
+    @include direction-context(right-to-left) {
+      @include span-columns(6);
+    }
+  }
+}
+
+.single .alignright {
+  @include bp(medium) {
+    @include direction-context(right-to-left) {
+      @include span-columns(6);
+      margin-left: 0;
+    }
+  }
+}
